@@ -26,7 +26,7 @@ args = parser.parse_args()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 c_handler = logging.StreamHandler()
-f_handler = logging.FileHandler("company_skills.log")
+f_handler = logging.FileHandler("myscript.log")
 c_handler.setLevel(logging.DEBUG)
 f_handler.setLevel(logging.DEBUG)
 c_format = logging.Formatter('%(name)s - [%(levelname)s] - %(message)s')
@@ -40,8 +40,12 @@ logger.addHandler(f_handler)
 def do_stuff(condition=False):
     if condition:
         print("I can do some really nice stuff!")
-    raise CustomError("I can raise ugly error too!")
+    raise CustomError("cannot print nice stuff, condition is {}!".format(condition))
 
 # main function of your script
 if __name__ == "__main__":
-    do_stuff()
+    logger.info("starting myscript :-)")
+    try:
+        do_stuff()
+    except (CustomError,) as e:
+        logger.warning(str(e))
