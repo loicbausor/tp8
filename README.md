@@ -29,3 +29,15 @@ Next to the package, I expect a script (just like ```myscript.py```to be usable 
 
 I'm not expecting doc, but you have to replace this README.md to describe what your package do, how to install and requirements.
 
+I'm not expecting unit tests.
+
+## Resources
+Another simple package structure (with unit tests also!) can be found here: https://github.com/navdeep-G/samplemod
+
+I parameterized your logger, but you will find a tutorial on logging here: https://docs.python.org/3/howto/logging.html
+
+I started a parser in your script, but you will find the doc of argument parsing here: https://docs.python.org/3/library/argparse.html
+
+Other resources can be found in the last slides of the course.
+
+Enjoy, ask all the questions you have.
