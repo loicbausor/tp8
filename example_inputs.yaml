@@ -1,13 +1,15 @@
 ﻿# Toy data characteristics
-n_data: 1000
-noise: 0.1
+n_data: 1000 # Number of data points
+noise: 0.1 # Noise in the data
 
 # Algorithms characteristics
 lr: 0.01 # Positive
 batch_size: 32 # Positive int > n_data
 epochs: 100 # Positive int
-width: 30
+width: 30 # The width of the perceptron : Postive int
 
 # Report directory and name
-report_directory: ""
-report_name: ""
+report_directory: "" # A path 
+# (if leaved empty it will create a report folder at the root repo)
+report_name: "" # "Name.html" 
+# (if leaved empty the report will be named Toy_report.html)
