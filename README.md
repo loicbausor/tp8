@@ -1,4 +1,4 @@
-# customMLLib
+# Package : customMLLib
 Very simple template for packaging ML project
 
 ## The template
@@ -16,28 +16,43 @@ Just add some modules to it (.py files with functions and classes).
 from customML.mymodule import myfunction
 ```
 
-## What I expect
-Implement one of your TP under this template.
+# Script : 
 
-It will not be easy to test packages that use tensorflow without GPU, but have a try.
+## Goal 
+The aim of the script is to fit the two models we packaged on the data we also packaged (with custom inputs parameters) and to create a really basic HTML report of their performances. It includes the models & data parameters chosen, the models accuracies and some plots of the performances.
 
-I will judge how your package is easy to install with ```pip```, how it works, but not necessarily if it produces correct results.
+## Requirements
+Appart from our package, don't forget to install the other requirements by the following command : 
+```
+pip install -r requirements
+```
+## Inputs 
 
-I just check deployment and usability of your sources.
+The inputs of the scripts have to be specified in a YAML file. Its file path will be passed into the arguments `--input_yml` of the script. This file must contain the following fields (you can of course change the values): 
 
-Next to the package, I expect a script (just like ```myscript.py```to be usable and have **logs**, **custom errors** and **argument parsing**) that uses some functions of your package.
+```{yaml}
+# Toy data characteristics
+n_data: 1000 # Number of data points
+noise: 0.1 # Noise in the data
 
-I'm not expecting doc, but you have to replace this README.md to describe what your package do, how to install and requirements.
+# Algorithms characteristics
+lr: 0.01 # Positive
+batch_size: 32 # Positive int > n_data
+epochs: 100 # Positive int
+width: 30 # The width of the perceptron : Postive int
 
-I'm not expecting unit tests.
+# Report directory and name
+report_directory: "" # A path 
+# (if leaved empty it will create a report folder at the root repo)
+report_name: "" # "Name.html" 
+# (if leaved empty the report will be named Toy_report.html)
+```
+You will find this example YAML file in this repo (example_inputs.yaml).
 
-## Resources
-Another simple package structure (with unit tests also!) can be found here: https://github.com/navdeep-G/samplemod
+## Execution
 
-I parameterized your logger, but you will find a tutorial on logging here: https://docs.python.org/3/howto/logging.html
+To run the code simply execute the myscript.py module with the YAML path needed: 
 
-I started a parser in your script, but you will find the doc of argument parsing here: https://docs.python.org/3/library/argparse.html
-
-Other resources can be found in the last slides of the course.
-
-Enjoy, ask all the questions you have.
+```
+python -m myscript --input_yml Path/to/your/yml.yaml
+```
