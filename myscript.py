@@ -14,6 +14,9 @@ import numpy as np
 from jinja2 import Environment, FileSystemLoader
 
 # Custom Errors
+class Error(Exception):
+    pass
+
 class ArgsError(Error):
     pass
 
