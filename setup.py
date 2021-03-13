@@ -3,15 +3,16 @@ from setuptools import setup, find_packages
 setup(
     name="customML",
     version="0.1",
-    description="custom ML package",
-    author="***",
-    author_email="***",
+    description="Custom ML package which implements ",
+    author="Sibaucosor",
+    author_email="sicot.lea-marie@hotmail.fr/loic.bausor@gmail.com",
     packages=find_packages(),
     zip_safe=False,
     install_requires=[
-        "pandas",
         "numpy",
-        "tqdm",
+        "sklearn",
+        "matplotlib>=3",
+        "tensorflow>=2"
     ],
-    include_package_data=True,
+    include_package_data=True
 )

@@ -1,0 +1,13 @@
+﻿# Toy data characteristics
+n_data: 1000
+noise: 0.1
+
+# Algorithms characteristics
+lr: 0.01 # Positive
+batch_size: 32 # Positive int > n_data
+epochs: 100 # Positive int
+width: 30
+
+# Report directory and name
+report_directory: ""
+report_name: ""

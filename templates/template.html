@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>Logistic Regression VS Perceptron to classify toy data</h1>
+<h2>Parameters :</h2>
+<b>Data : </b>
+<ul>
+<li>Training sample size : {{ n_data }}</li>
+<li> Noise : {{ noise }}</li>
+</ul>
+<b>Model : </b>
+<ul>
+<li>Learning rate : {{ lr }}</li>
+<li>Batch size : {{ batch_size}}</li>
+<li>Number of Epochs : {{ epochs }}</li>
+</ul>
+<h2>Data vizualization :</h2>
+<p><img src="file:{{ data_viz}}" /></p>
+<h2>Model 1 : Logistic regression</h2>
+<ul>
+<li>Accuracy on training set : {{ train_acc_1 }}</li>
+<li>Accuracy on the test set : {{test_acc_1}}</li>
+</ul>
+<h3>Model Loss plot :</h3>
+<p><img src="file:{{ loss_1 }}" /></p>
+<h3>Model separation frontier :</h3>
+<p><img src="file:{{ frontier_1 }}" /></p>
+<h2>Model 2 : Two layers perceptron (width : {{ width }})</h2>
+<ul>
+<li>Accuracy on training set : {{ train_acc_2 }}</li>
+<li>Accuracy on the test set : {{test_acc_2}}</li>
+</ul>
+<h3>Model Loss plot :</h3>
+<p><img src="file:{{ loss_2 }}" /></p>
+<h3>Model separation frontier :</h3>
+<p><img src="file:{{ frontier_2 }}" /></p>
+</body>
+</html>
