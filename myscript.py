@@ -68,13 +68,8 @@ if __name__ == "__main__":
     logger.info("starting myscript :-)")
     try:
         # Args parsing & normalizing
-        try:
-            with open(args.input_yml, 'rb') as f:
-                conf = yaml.safe_load(f.read())
-        except:
-            logger.critical("YAML conf file was not found.")
-            raise ArgsError("The YAML to parse inputs was not found" +
-            " (check if it exists and if it is in the good format).")    
+        with open(os.path.normpath(args.input_yml), 'rb') as f:
+            conf = yaml.safe_load(f.read())
         try:
             n_data = conf['n_data']
             noise = conf['noise']
@@ -106,7 +101,7 @@ if __name__ == "__main__":
         
         # Make the report directory
         if not os.path.exists(report_directory + "/report"):
-            os.mkdir(report_directory + "/report")
+            os.mkdir(os.path.normpath(report_directory + "/report"))
         
         logger.info("Arguments parsed succesfully.")
 
@@ -132,7 +127,7 @@ if __name__ == "__main__":
         plots['loss_2'] = perc.fit_on_batches(X_train, Y_train,
                                     plot_training = True, batch_size = batch_size,
                                     n_epochs = epochs, verbose=0)
-        plots['frontier_2'] = plot_frontier(perc, X_val, Y_val);  
+        plots['frontier_2'] = plot_frontier(perc, X_val, Y_val)  
         train_acc_2 = round(perc._train_accuracy,2)
         test_acc_2 = round(perc.score(X_val, Y_val),2)
 

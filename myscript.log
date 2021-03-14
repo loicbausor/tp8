@@ -1,0 +1,45 @@
+2021-03-14 20:52:22,020 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:52:22,037 - __main__ - [CRITICAL] - YAML conf file was not found.
+2021-03-14 20:52:22,038 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 20:53:13,176 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:53:13,178 - __main__ - [CRITICAL] - YAML conf file was not found.
+2021-03-14 20:53:13,179 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 20:54:15,628 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:54:15,630 - __main__ - [CRITICAL] - YAML conf file was not found.
+2021-03-14 20:54:15,630 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 20:55:39,902 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:55:39,905 - __main__ - [CRITICAL] - YAML conf file was not found.
+2021-03-14 20:55:39,905 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 20:56:32,335 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:56:32,338 - __main__ - [CRITICAL] - YAML conf file was not found.
+2021-03-14 20:56:32,339 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 20:56:54,066 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:56:54,069 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 20:57:38,057 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:58:21,876 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:59:28,284 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 20:59:28,287 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 21:00:08,694 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 21:00:08,714 - __main__ - [CRITICAL] - Code ended with errors.
+2021-03-14 21:00:38,316 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 21:01:14,579 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 21:01:14,595 - __main__ - [WARNING] - No report name were given, it was automatically assigned to : Toy_report.html
+2021-03-14 21:01:36,362 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 21:01:36,375 - __main__ - [WARNING] - No report name were given, it was automatically assigned to : Toy_report.html
+2021-03-14 21:01:36,375 - __main__ - [WARNING] - No report folder were given, it was automatically assigned to : C:\Users\LoicB\Documents\Big_data_8\customMLLib
+2021-03-14 21:01:36,376 - __main__ - [INFO] - Arguments parsed succesfully.
+2021-03-14 21:01:36,507 - __main__ - [INFO] - Data loaded successfully.
+2021-03-14 21:01:39,226 - __main__ - [INFO] - Models fitted successfully.
+2021-03-14 21:01:40,273 - __main__ - [INFO] - Code ended without errors, please find your report at : C:\Users\LoicB\Documents\Big_data_8\customMLLib\report\Toy_report.html
+2021-03-14 21:03:24,005 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 21:03:24,019 - __main__ - [WARNING] - No report name were given, it was automatically assigned to : Toy_report.html
+2021-03-14 21:03:24,020 - __main__ - [INFO] - Arguments parsed succesfully.
+2021-03-14 21:03:24,137 - __main__ - [INFO] - Data loaded successfully.
+2021-03-14 21:03:25,108 - __main__ - [INFO] - Models fitted successfully.
+2021-03-14 21:03:26,171 - __main__ - [INFO] - Code ended without errors, please find your report at : C:\Users\LoicB\Desktop\YOLOLO\report\Toy_report.html
+2021-03-14 21:04:55,513 - __main__ - [INFO] - starting myscript :-)
+2021-03-14 21:04:55,528 - __main__ - [WARNING] - No report folder were given, it was automatically assigned to : C:\Users\LoicB\Documents\Big_data_8\customMLLib
+2021-03-14 21:04:55,528 - __main__ - [INFO] - Arguments parsed succesfully.
+2021-03-14 21:04:55,626 - __main__ - [INFO] - Data loaded successfully.
+2021-03-14 21:04:56,587 - __main__ - [INFO] - Models fitted successfully.
+2021-03-14 21:04:57,484 - __main__ - [INFO] - Code ended without errors, please find your report at : C:\Users\LoicB\Documents\Big_data_8\customMLLib\report\TOMATE.html
